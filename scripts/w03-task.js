@@ -7,7 +7,7 @@ function add (number1, number2){
 }
 
 function addNumbers (){
-    let addNumber1 = Number(document.querySelector('#add1').value);  //let num1 = parseInt(document.getElementById("#add1").value);   // Get the value of input field with id="num-one
+    let addNumber1 = Number(document.querySelector('#add1').value);
     let addNumber2 = Number(document.querySelector('#add2').value);
     document.querySelector('#sum').value = add(addNumber1, addNumber2);
 }
@@ -19,7 +19,7 @@ const subtract = function (number1, number2){
 }
 
 const subtractNumbers = function (){
-    let num1 = Number(document.querySelector('#subtract1').value);  //let num1 = parseInt(document.getElementById("#add1").value);   // Get the value of input field with id="num-one
+    let num1 = Number(document.querySelector('#subtract1').value); 
     let num2 = Number(document.querySelector('#subtract2').value);
     document.querySelector('#difference').value = subtract(num1, num2);
 }
