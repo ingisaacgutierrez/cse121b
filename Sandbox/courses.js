@@ -19,24 +19,24 @@ const aCourse = {
     ],
     enrollStudent: function (sectionNum) {
         const sectionIndex = this.sections.findIndex(
-            (section) > section.sectionNum == sectionNum
+            (section) => section.sectionNum == sectionNum
         );
-        if (section >= 0) {
+        if (sectionIndex >= 0) {
             this.sections[sectionIndex].enrolled++;
             renderSections (this.sections);
         };
     },
     dropStudent: function (sectionNum) {
         const sectionIndex = this.sections.findIndex(
-            (section) > section.sectionNum == sectionNum
+            (section) => section.sectionNum == sectionNum
         );
-        if (section >= 0) {
-            this.sections[sectionIndex].enrolled++;
+        if (sectionIndex >= 0) {
+            this.sections[sectionIndex].enrolled--;
             renderSections (this.sections);
-        };
+        }
     },
     
-}
+};
 function setCourseInfo(course) {
     const courseName = document.querySelector("#courseName");
     const coursecode = document.querySelector("#courseCode");
