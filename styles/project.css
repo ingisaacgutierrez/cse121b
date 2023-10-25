@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* changed the font family to Press Start 2P, a gaming font */
+    font-family: 'Press Start 2P', cursive;
+    background-color: black;
+    color: white;
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: yellow;
+}
+
+#score {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.question {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color:orangered;
+}
+
+#options {
+    list-style-type: none;
+}
+
+#options li {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    border: 2px solid blue; /* added blue border */
+    padding: 10px; /* added padding */
+    color: white; /* changed text color to white */
+}
+
+#options li:hover {
+    background-color: blueviolet; /* changed hover effect to background color */
+}
+
+#options li.correct {
+    color: green;
+    background-color: lightgreen; /* added background color for correct answer */
+}
+
+#options li.wrong {
+    color: red;
+    background-color: lightcoral; /* added background color for wrong answer */
+}
+
+button {
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
+    border: 2px solid blue; 
+    background-color: transparent;
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+}
+
+
+
+#back:hover{ 
+    background-color: red;
+}
+#back{
+    margin-right: 900px;;
+}
+#next:hover{    
+    background-color: green;
+}
